@@ -1,0 +1,27 @@
+# Find a Fixed Point using Linear Search
+
+
+
+#include<stdio.h>
+#include<math.h>
+
+int search(int arr[], int n )
+{
+	int i ;
+	for(i=0;i<n;i++)
+	{
+		if(arr[i]==i)
+		return i;
+	}
+return -1;
+}
+
+int main()
+{
+	int arr[]= {1,2,5,5,4};
+	int n= sizeof(arr)/sizeof(arr[0]);
+	
+	printf("fixed point is %d",search(arr,n));
+
+}
+
